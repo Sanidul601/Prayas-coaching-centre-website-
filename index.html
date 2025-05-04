@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayas Coaching Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #0275d8;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #025aa5;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      background-color: #ffffff;
+      padding: 30px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #0275d8;
+    }
+    ul li {
+      margin: 8px 0;
+    }
+    .form-field {
+      margin-bottom: 15px;
+    }
+    .form-field label {
+      display: block;
+      margin-bottom: 6px;
+    }
+    .form-field input, .form-field select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-field input[type="submit"] {
+      background-color: #0275d8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .form-field input[type="submit"]:hover {
+      background-color: #025aa5;
+    }
+    footer {
+      background-color: #0275d8;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prayas Coaching Centre</h1>
+    <p>Empowering Students Since 2022 | Run by Sanidul Hoque & Ishwar Biswas</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#fees">Fees</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Prayas Coaching Centre, located in Kabaitary, Dist: Bongaigaon, P.O.: Chalantapara, Assam – 783388. We are committed to providing quality education for students from Class VI to XII across a variety of subjects. With increasing student strength since our founding in 2022, we aim to guide and empower every learner.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses Offered</h2>
+    <ul>
+      <li>General Mathematics</li>
+      <li>Advanced Mathematics</li>
+      <li>English</li>
+      <li>English Grammar</li>
+      <li>General Science</li>
+      <li>Social Science</li>
+      <li>Assamese Grammar</li>
+    </ul>
+    <p>Classes Available: <strong>VI to XII</strong></p>
+  </section>
+
+  <section id="fees">
+    <h2>Fee Structure</h2>
+    <p><strong>Rs. 1000</strong> per 15 days. Transparent and affordable learning with no hidden charges.</p>
+  </section>
+
+  <section id="admission">
+    <h2>Admission Form</h2>
+    <form action="https://formspree.io/f/xblogbnd" method="POST"> <!-- Add the action attribute here -->
+      <div class="form-field">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="class">Class:</label> 
+        <select id="class" name="class" required>
+          <option value="">Select Class</option>
+          <option>VI</option>
+          <option>VII</option>
+          <option>VIII</option>
+          <option>IX</option>
+          <option>X</option>
+          <option>XI</option>
+          <option>XII</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+      </div>
+      <div class="form-field">
+        <label for="subjects">Subjects Interested In:</label>
+        <input type="text" id="subjects" name="subjects">
+      </div>
+      <div class="form-field">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Kabaitary, Dist: Bongaigaon, P.O.: Chalantapara, Assam – 783388</p>
+    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+    <p><strong>Email:</strong> prayascoachingcentre@email.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prayas Coaching Centre. All rights reserved.</p>
+  </footer>
+</body>
+</html>
